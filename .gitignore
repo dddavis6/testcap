@@ -1,0 +1,4 @@
+/testcap
+*.test
+*.out
+.DS_Store
