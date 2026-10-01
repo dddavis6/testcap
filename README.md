@@ -65,6 +65,13 @@ Requires Go 1.22 or later. No third-party dependencies.
 
 ## Status
 
-Handles the plain-text output of `go test -v`. `go test -json` and
-table-driven output with custom `t.Log` formatting are not covered
+Handles the plain-text output of `go test -v` and the event stream
+from `go test -json`. The format is detected from the first
+character of the input, so no flag is needed:
+
+```
+go test -json ./... | testcap
+```
+
+Table-driven output with custom `t.Log` formatting is not covered
 yet.

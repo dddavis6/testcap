@@ -35,7 +35,7 @@ func run(args []string, stdin io.Reader, stdout, stderr io.Writer) (failed bool,
 		in = f
 	}
 
-	report, err := Parse(in)
+	report, err := ParseAuto(in)
 	if err != nil {
 		return false, err
 	}
